@@ -124,8 +124,15 @@ h2 {
 
 .section-title {
   font-family: var(--tittle-second-font);
-  font-size: 2.5rem;
+  color: var(--accent-color);
+  font-size: 2rem;
   line-height: 167%;
+  text-align: center;
+  width: 100%;
+}
+
+h4.section-title {
+  font-size: 1.25rem;
 }
 
 .text {
@@ -145,13 +152,23 @@ lord-icon {
 }
 
 .about .row,
-.tools .row .projects row {
+.tools .row .projects {
   margin: 100px 0;
 }
 
 @media (min-width: 350px) {
-  .section-title {
-    font-size: 2rem;
+  .project-title-wrap {
+    flex-direction: column;
+  }
+
+  .arrows {
+    transform: rotate(90deg);
+  }
+}
+
+@media (min-width: 490px) {
+  .black-wood {
+    height: 4% !important;
   }
 }
 
@@ -164,6 +181,27 @@ lord-icon {
   lord-icon {
     width: 200px;
     height: 200px;
+  }
+
+  .black-wood {
+    height: 3% !important;
+  }
+
+  .project-title-wrap {
+    flex-direction: row;
+  }
+
+  .arrows {
+    transform: rotate(0);
+  }
+
+  .section-title {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  h4.section-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -179,6 +217,10 @@ lord-icon {
     font-size: 3rem;
     line-height: 167%;
     letter-spacing: 0.05em;
+  }
+
+  .black-wood {
+    height: 10% !important;
   }
 }
 
@@ -196,7 +238,7 @@ lord-icon {
 
 .black-wood {
   background-image: url(img/forest_dark.png);
-  height: 8%;
+  height: 20%;
 }
 
 /* Tools */
@@ -218,6 +260,7 @@ lord-icon {
 
 .gallery {
   padding-top: 20px !important;
+  padding-bottom: 200px !important;
   position: relative;
 }
 
@@ -233,8 +276,21 @@ lord-icon {
 /* Projects */
 
 .card {
-  padding: 20px;
-  border: 1px dashed var(--accent-color);
+  padding: 20px 5px;
+  border: 3px dashed var(--accent-color);
   border-radius: 0;
   background-color: transparent;
+}
+
+.ripple {
+  border-radius: 0;
+}
+
+.img-project {
+  border: 2px solid var(--accent-color);
+}
+
+.title-more {
+  color: var(--secondary-color) !important;
+  font-size: 0.9rem !important;
 }
