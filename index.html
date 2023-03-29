@@ -17,8 +17,9 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
 
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-
+  <script defer src="app.js"></script>
   <link rel="stylesheet" href="style.css">
+
 
 
 </head>
@@ -29,7 +30,6 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
-      <!-- Container wrapper -->
       <div class="container-fluid">
         <!-- Toggle button -->
         <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
@@ -38,10 +38,7 @@
             <i class="fas fa-bars"></i>
           </span>
         </button>
-
-        <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarExample01">
-          <!-- Left links -->
           <ul class="navbar-nav mb-2 p-3">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -56,18 +53,17 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
-          <!-- Left links -->
         </div>
-        <!-- Collapsible wrapper -->
       </div>
-      <!-- Container wrapper -->
     </nav>
 
     <!-- Background image -->
     <div id="intro" class="bg-image" style=" background-image: url('img/header_background.jpg'); height: 100vh;">
       <div class="social position-absolute">
-        <a href="" class="p-1"><img src="img/icon/github.png" alt="github icon" title="github" class="m-1"></a>
-        <a href="" class="p-1"><img src="img/icon/linkedin.png" alt="linkedin icon" title="linkedin" class="m-1"></a>
+        <a href="https://github.com/xAkashax" class="p-1"><img src="img/icon/github.png" alt="github icon"
+            title="github" class="m-1"></a>
+        <a href="www.linkedin.com/in/klaudia-bilan" class="p-1"><img src="img/icon/linkedin.png" alt="linkedin icon"
+            title="linkedin" class="m-1"></a>
       </div>
       <div class="container d-flex ms-auto align-items-center text-center justify-content-center h-100">
         <div class="d-flex row mb-lg-12">
@@ -76,13 +72,9 @@
           <div>
             <a class="btn button-main btn-outline-light btn-lg m-2" href="#" role="button">Get in touch</a>
           </div>
-
         </div>
-
       </div>
-
     </div>
-    <!-- Background image -->
 
   </header>
 
@@ -133,7 +125,6 @@
 
     <section class="container-fluid p-5 tools">
       <div class="row">
-
         <div class="col-md-6 gx-5 mb-4">
           <h3 class="mb-4 section-title">Tools and technologies</h3>
           <p class="text tools-text">
@@ -229,30 +220,42 @@
       <!-- Gallery -->
     </section>
 
-    <section class="container-fluid p-5 projects">
+    <section class="container-fluid px-2 py-5 projects">
 
-      <div class="row ">
+      <div class="row justify-content-center">
         <div class="col-md-2 mb-9 w-100">
           <h3 class="mb-4 section-title">Commercial projects</h3>
         </div>
 
-        <div class="row mb-10">
+        <div class="row mb-5">
           <div class="col col-md-6">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/wamilweld.png" class="img-fluid img-project" />
-                <a href="#!">
+                <a href="https://wamilweld.com/" target="_blank">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Wamilweld.com</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <div class="text-center"> <a href="https://wamilweld.com/" class="btn button-main"
+                <p class="card-text">
+                  My first commercial project!<br />
+                  I created a simple one page website in Wordpress for a client. The whole process of creating the
+                  website was a new challenge for me. Before I started designing the website, I talked to the client to
+                  understand what they wanted. Then, I created a sketch of the website, which I adapted to their
+                  preferences. Once we agreed on the details, I started building the website. This project gave me
+                  valuable experience in website design and helped
+                  me learn how to create websites from scratch."</p>
+                <p class="card-text"><strong>Built with:</strong>
+                  <ul>
+                    <li> CMS Wordpress</li>
+                    <li> RWD</li>
+                  </ul>
+                </p>
+                <div class="text-center"> <a href="https://wamilweld.com/" class="btn button-main btn-outline-light"
                     target="_blank">Website</a>
                   <a href="https://www.figma.com/file/16EwNURpjNeVVHliBljlwa/Wamil-Weld?t=1FvrgVrPEDbfP3du-1"
-                    class="btn button-main" target="_blank">Figma</a>
+                    class="btn button-main btn-outline-light" target="_blank">Figma</a>
                 </div>
               </div>
             </div>
@@ -260,10 +263,10 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="d-flex align-items-center bd-highlight mb-6 project-title-wrap">
           <div class="me-auto p-2 bd-highlight">
-            <h4 class="section-title">My other projects</h4>
+            <h4 class="section-title ">My other projects</h4>
           </div>
           <div class="p-2 bd-highlight">
             <h4 class="section-title title-more">More little things</h4>
@@ -282,12 +285,12 @@
         </div>
 
 
-        <div class="row mb-10">
-          <div class="col col-md-6">
-            <div class="card my-3">
+        <div class="row mb-5">
+          <div class="col col-md-6 py-3">
+            <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/portfolio.png" class="img-fluid img-project" />
-                <a href="#!">
+                <a href="#!" target="_blank">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
               </div>
@@ -295,20 +298,33 @@
                 <h5 class="card-title">Portfolio</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card's content.</p>
-                <div class="text-center"> <a href="#" class="btn button-main" target="_blank">Website</a>
+                <p class="card-text"><strong>Built with:</strong>
+                  <ul>
+                    <li> HTML5</li>
+                    <li> CSS3</li>
+                    <li> Pseudo-elements</li>
+                    <li> Flexbox and Grid</li>
+                    <li> Bootstrap</li>
+                    <li> Lordicon</li>
+                    <li> JS</li>
+                    <li> Photoshop</li>
+                  </ul>
+                </p>
+                <div class="text-center"> <a href="#" class="btn button-main btn-outline-light mb-2"
+                    target="_blank">Website</a>
                   <a href="https://www.figma.com/file/zMVeMblqKPIdhK5Z97sI9N/Portfolio?node-id=0%3A1&t=WtSUol4t7cLZJWQI-1"
-                    class="btn button-main" target="_blank">Figma</a> <a href="#" class="btn button-main"
-                    target="_blank">Github</a>
+                    class="btn button-main btn-outline-light mb-2" target="_blank">Figma</a> <a href="#"
+                    class="btn button-main btn-outline-light mb-2" target="_blank">Github</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col col-md-6">
-            <div class=" card">
+          <div class="col col-md-6 py-3">
+            <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/petcare.png" class="img-fluid img-project" />
-                <a href="#!">
+                <a href="https://github.com/xAkashax/pet-care-website" target="_blank">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
               </div>
@@ -330,8 +346,8 @@
                   </ul>
                 </p>
                 <div class="text-center">
-                  <a href="#" class="btn button-main" target="_blank">Website</a>
-                  <a href="https://github.com/xAkashax/pet-care-website" class="btn button-main"
+                  <a href="#" class="btn button-main btn-outline-light" target="_blank">Website</a>
+                  <a href="https://github.com/xAkashax/pet-care-website" class="btn button-main btn-outline-light"
                     target="_blank">Github</a>
                 </div>
               </div>
@@ -339,12 +355,12 @@
           </div>
         </div>
 
-        <div class="row mb-10">
-          <div class="col col-md-6">
+        <div class="row mb-5">
+          <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/photowebsite.png" class="img-fluid img-project" />
-                <a href="#!">
+                <a href="https://xakashax.github.io/photo-website/" target="_blank">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
               </div>
@@ -364,21 +380,22 @@
                   </ul>
                 </p>
                 <div class="text-center">
-                  <a href="https://xakashax.github.io/photo-website/" class="btn button-main"
+                  <a href="https://xakashax.github.io/photo-website/" class="btn button-main btn-outline-light mb-2"
                     target="_blank">Website</a>
                   <a href="https://www.figma.com/file/cP4j7GgCny74yNMHBqdGug/Photo-website?node-id=0%3A1&t=zZSo3HiV5BPkgMsV-1"
-                    class="btn button-main" target="_blank">Figma</a>
-                  <a href="https://github.com/xAkashax/photo-website" class="btn button-main" target="_blank">Github</a>
+                    class="btn button-main mb-2" target="_blank">Figma</a>
+                  <a href="https://github.com/xAkashax/photo-website" class="btn button-main btn-outline-light mb-2"
+                    target="_blank">Github</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col col-md-6">
+          <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/moonkingdom.png" class="img-fluid img-project" />
-                <a href="#!">
+                <a href="https://github.com/xAkashax/parallax-scrolling-website" target="_blank">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
               </div>
@@ -400,8 +417,8 @@
                 </p>
                 <div class="text-center"> <a href="https://xakashax.github.io/parallax-scrolling-website/#"
                     class="btn button-main" target="_blank">Website</a>
-                  <a href="https://github.com/xAkashax/parallax-scrolling-website" class="btn button-main"
-                    target="_blank">Github</a>
+                  <a href="https://github.com/xAkashax/parallax-scrolling-website"
+                    class="btn button-main btn-outline-light" target="_blank">Github</a>
                 </div>
               </div>
             </div>
@@ -409,11 +426,11 @@
         </div>
 
         <div class="row mb-10">
-          <div class="col col-md-6">
+          <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/barbershop.png" class="img-fluid img-project" />
-                <a href="#!">
+                <a href="https://xakashax.github.io/barber-shop-duck" target="_blank">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
               </div>
@@ -432,9 +449,9 @@
                     </ul>
                   </p>
                   <div class="text-center">
-                    <a href="https://xakashax.github.io/barber-shop-duck/" class="btn button-main"
+                    <a href="https://xakashax.github.io/barber-shop-duck" class="btn button-main btn-outline-light"
                       target="_blank">Website</a>
-                    <a href="https://github.com/xAkashax/barber-shop-duck" class="btn button-main"
+                    <a href="https://github.com/xAkashax/barber-shop-duck" class="btn button-main btn-outline-light"
                       target="_blank">Github</a>
                   </div>
               </div>
@@ -447,7 +464,6 @@
 
 
     </section>
-
 
   </main>
 
