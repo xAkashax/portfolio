@@ -6,6 +6,7 @@
   --white: #fff;
   --black: #000;
   --accent-color: #486284;
+  --active-color: #8a1a25;
   --title-font: 'Changa One', cursive;
   --text-font: 'Maitree', serif;
   --tittle-second-font: 'Roboto Mono', monospace;
@@ -17,12 +18,22 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.main {
+  position: relative;
+}
+
+/* Navigation */
+
 .navbar {
-  font-family: var(--tittle-second-font);
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
   border-bottom: 1px solid #dee5ed;
+  font-size: 1.25rem;
+  line-height: 125%;
+  font-family: var(--tittle-second-font);
+  letter-spacing: 0.05rem;
 }
 
 .navbar-nav {
@@ -30,23 +41,84 @@
 }
 
 .navbar-scroll.scrolled {
-  background-color: var(--primary-color);
   transition: background-color 500ms linear;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .nav-link {
-  color: var(--accent-color);
-  margin: 0 30px;
+  margin: 0 1.875rem;
+  font-weight: 900;
   text-align: center;
+  color: var(--accent-color);
 }
 
-.nav-link.active {
-  color: rgb(215, 106, 10) !important;
+.nav-link.active,
+.nav-link:hover {
+  color: var(--active-color) !important;
 }
 
-.bg-image {
-  padding: 0;
+/*  Buttons */
+
+.button-main {
+  border-radius: 50px;
+  border-color: transparent;
+  background-color: var(--accent-color);
+  font-size: 1.125rem;
+  font-family: var(--tittle-second-font);
+  font-weight: 400;
+  text-transform: none;
+  color: var(--secondary-color);
 }
+
+.button-main:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color) !important;
+}
+
+.btn-back-to-top {
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.btn-back-to-top:hover {
+  background-color: var(--active-color);
+  color: var(--primary-color);
+}
+
+/* Icons */
+
+.social {
+  right: 50%;
+  transform: translate(50%, 110px);
+}
+
+.social a img:hover {
+  border-radius: 6px;
+  background-color: var(--accent-color);
+}
+
+.socials-about a img:hover,
+.social-icons li a img:hover {
+  border-radius: 6px;
+  background-color: var(--active-color);
+}
+
+.lord-icon-wrap {
+  justify-content: space-evenly;
+}
+
+lord-icon {
+  width: 9.375rem;
+  height: 9.375rem;
+}
+
+/* Main elements */
 
 h1 {
   font-size: 4.5rem;
@@ -69,61 +141,30 @@ h2 {
   color: var(--black);
 }
 
-@media (max-width: 991px) {
-  .navbar-collapse .navbar-nav {
-    background-color: var(--primary-color);
-  }
+/* Bacgrounds */
 
-  .navbar-toggler {
-    color: rgb(118, 134, 143);
-  }
+.bg-image {
+  padding: 0;
 }
 
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 6.625rem;
-  }
-
-  h2 {
-    font-size: 2.875rem;
-    text-align: right;
-  }
-
-  .social {
-    right: 0 !important;
-    transform: translate(-50%, 110px) !important;
-  }
+.bg-wood {
+  background-image: url(img/forest_white.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: bottom left;
+  height: 20%;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-/* Button */
-
-.button-main {
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  border-radius: 50px;
-  text-transform: none;
-  font-weight: 400;
-  font-family: var(--tittle-second-font);
-  font-size: 1.125rem;
-  border-color: transparent;
+.black-wood {
+  background-image: url(img/forest_dark.png);
+  height: 20%;
 }
 
-.button-main:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color) !important;
-}
-
-.social {
-  right: 50%;
-  transform: translate(50%, 110px);
-}
-
-.social a img:hover {
-  background-color: var(--accent-color);
-  border-radius: 6px;
-}
-
-/* Section about me */
+/* Sections */
 
 .about,
 .projects {
@@ -154,38 +195,10 @@ h4.section-title {
   color: var(--white);
 }
 
-.lord-icon-wrap {
-  justify-content: space-evenly;
-}
-
-lord-icon {
-  width: 150px;
-  height: 150px;
-}
-
 .about .row,
 .tools .row .projects {
   margin: 100px 0;
 }
-
-.bg-wood {
-  background-image: url(img/forest_white.png);
-  background-repeat: repeat-x;
-  background-size: contain;
-  background-position: bottom left;
-  height: 20%;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.black-wood {
-  background-image: url(img/forest_dark.png);
-  height: 20%;
-}
-
-/* Tools */
 
 .tools {
   color: var(--black);
@@ -200,8 +213,6 @@ lord-icon {
   text-align: center;
 }
 
-/*   Gallery */
-
 .gallery {
   padding-top: 20px !important;
   padding-bottom: 200px !important;
@@ -211,13 +222,10 @@ lord-icon {
 .gallery-title {
   text-align: center;
   font-size: 1rem;
-  /* line-height: 400%; */
   letter-spacing: 0.05em;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--black);
 }
-
-/* Projects */
 
 .card {
   padding: 20px 5px;
@@ -244,6 +252,20 @@ lord-icon {
   font-size: 0.9rem !important;
 }
 
+footer {
+  background-color: var(--primary-color);
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.copyright a {
+  color: var(--accent-color);
+}
+
+/* Media Queries */
+
 @media (min-width: 350px) {
   .project-title-wrap {
     flex-direction: column;
@@ -261,6 +283,10 @@ lord-icon {
 }
 
 @media (min-width: 765px) {
+  .fa-bars {
+    font-size: 2em;
+  }
+
   .lord-icon-wrap {
     flex-direction: column;
     align-items: end;
@@ -296,9 +322,58 @@ lord-icon {
     font-size: 1.35rem;
     text-align: center;
   }
+
+  .main-title {
+    padding: 1rem 5rem 0;
+  }
+
+  .contact {
+    padding: 2rem 5rem !important;
+  }
+
+  .contact .text {
+    text-align: left !important;
+  }
+
+  .contact-title {
+    text-align: left;
+    font-size: 1.75rem !important;
+  }
+
+  .btn-wrap {
+    justify-content: end !important;
+  }
+
+  .contact-list {
+    justify-content: end !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse .navbar-nav {
+    background-color: var(--primary-color);
+  }
+
+  .navbar-toggler {
+    color: rgb(118, 134, 143);
+  }
 }
 
 @media (min-width: 1200px) {
+  h1 {
+    font-size: 6.625rem;
+  }
+
+  h2 {
+    font-size: 2.875rem;
+    text-align: right;
+  }
+
+  .social {
+    right: 0 !important;
+    transform: translate(-50%, 110px) !important;
+  }
+
   .about,
   .projects {
     padding: 10rem !important;
