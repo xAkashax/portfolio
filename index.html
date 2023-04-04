@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Portfolio</title>
+  <link rel="icon" href="img/akasha_watermark.png" type="image/x-icon">
+  <meta name="author" content="Klaudia Biłan">
+  <meta name="description"
+    content="Moje portfolio na frontend developera - Klaudia Biłan. Znajdziesz tutaj moje projekty z zakresu frontendu, takie jak strony internetowe, aplikacje webowe, sklepy internetowe i wiele innych.">
+  <title>Portfolio | Klaudia Biłan</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
@@ -15,83 +18,62 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
-
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
-
+  <script defer src="app.js"></script>
   <link rel="stylesheet" href="style.css">
-
-
 </head>
 
 <body>
-
-  <header class="container-fluid bg-image">
-
-    <!-- Navigation -->
+  <header class="container-fluid bg-image" id="home">
     <nav class="navbar navbar-expand-lg fixed-top navbar-scroll">
-      <!-- Container wrapper -->
       <div class="container-fluid">
-        <!-- Toggle button -->
         <button class="navbar-toggler ps-0" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
           aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="d-flex justify-content-start align-items-center">
             <i class="fas fa-bars"></i>
           </span>
         </button>
-
-        <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarExample01">
-          <!-- Left links -->
           <ul class="navbar-nav mb-2 p-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
-          <!-- Left links -->
         </div>
-        <!-- Collapsible wrapper -->
       </div>
-      <!-- Container wrapper -->
     </nav>
-
-    <!-- Background image -->
     <div id="intro" class="bg-image" style=" background-image: url('img/header_background.jpg'); height: 100vh;">
       <div class="social position-absolute">
-        <a href="" class="p-1"><img src="img/icon/github.png" alt="github icon" title="github" class="m-1"></a>
-        <a href="" class="p-1"><img src="img/icon/linkedin.png" alt="linkedin icon" title="linkedin" class="m-1"></a>
+        <a href="https://github.com/xAkashax" class="p-1"><img src="img/icon/github.png" alt="github icon"
+            title="github" class="m-1"></a>
+        <a href="https://www.linkedin.com/in/klaudia-bilan/" class="p-1"><img src="img/icon/linkedin.png"
+            alt="linkedin icon" title="linkedin" class="m-1"></a>
       </div>
       <div class="container d-flex ms-auto align-items-center text-center justify-content-center h-100">
         <div class="d-flex row mb-lg-12">
           <h1 class="mb-3 header-title">Hi, I'm Klaudia</h1>
           <h2 class="subtitle">Frontend Developer</h2>
           <div>
-            <a class="btn button-main btn-outline-light btn-lg m-2" href="#" role="button">Get in touch</a>
+            <a class="btn button-main btn-outline-light btn-lg m-2" href="#contact" role="button">Get in touch</a>
           </div>
-
         </div>
-
       </div>
-
     </div>
-    <!-- Background image -->
-
   </header>
-
-
-
-  <main class="container-fluid p-0">
-
-    <!--Section: Content-->
-    <section class="container-fluid p-5 about">
+  <main class="container-fluid p-0 main">
+    <button type="button" class="btn btn-floating btn-lg btn-back-to-top" id="btn-back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <section class="container-fluid p-5 about" id="about">
       <div class="row">
         <div class="col-md-6 gx-5 mb-4">
           <h3 class="mb-4 section-title">About me</h3>
@@ -107,10 +89,10 @@
             Web Developer. Thanks for taking the time to get to know me a little better!
           </p>
           <div class="socials-about mt-5">
-            <a href="" class="p-1"><img src="img/icon/instagram.png" alt="instagram icon" title="instagram"
-                class="my-1"></a>
-            <a href="" class="p-1"><img src="img/icon/facebook.png" alt="facebook icon" title="facebook"
-                class="m-1"></a>
+            <a href="https://www.instagram.com/xakvsha/" class="p-1"><img src="img/icon/instagram.png"
+                alt="instagram icon" title="instagram" class="my-1"></a>
+            <a href="https://www.facebook.com/xakvsha" class="p-1"><img src="img/icon/facebook.png" alt="facebook icon"
+                title="facebook" class="m-1"></a>
           </div>
         </div>
         <div class="col-md-6 gx-5 mb-4">
@@ -131,9 +113,8 @@
       </div>
     </section>
 
-    <section class="container-fluid p-5 tools">
+    <section class="container-fluid p-5 tools" id="tools">
       <div class="row">
-
         <div class="col-md-6 gx-5 mb-4">
           <h3 class="mb-4 section-title">Tools and technologies</h3>
           <p class="text tools-text">
@@ -148,119 +129,120 @@
             I'm excited to continue my learning journey, and my next goal is to dive into React!
           </p>
         </div>
-
         <div class="col-md-6 gx-5 mb-4">
           <div class="row justify-content-between align-items-center m-0">
             <div class="col-4">
-              <img src="img/icon/HTML5.png" alt="" class="img-fluid">
+              <img src="img/icon/HTML5.png" alt="html5 icon" class="img-fluid">
             </div>
             <div class="col-4">
-              <img src="img/icon/CSS3.png" alt="" class="img-fluid">
+              <img src="img/icon/CSS3.png" alt="css3 icon" class="img-fluid">
             </div>
             <div class="col-4">
-              <img src="img/icon/Javascript.png" alt="" class="img-fluid">
-            </div>
-          </div>
-
-          <div class="row justify-content-between align-items-center m-0 mt-5">
-            <div class="col-4">
-              <img src="img/icon/Adobe Lightroom.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-4">
-              <img src="img/icon/Adobe Photoshop.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-4">
-              <img src="img/icon/Visual Studio Code.png" alt="" class="img-fluid">
+              <img src="img/icon/Javascript.png" alt="javascript icon" class="img-fluid">
             </div>
           </div>
-
           <div class="row justify-content-between align-items-center m-0 mt-5">
             <div class="col-4">
-              <img src="img/icon/Sass.png" alt="" class="img-fluid">
+              <img src="img/icon/Adobe Lightroom.png" alt="adobe lightroom icon" class="img-fluid">
             </div>
             <div class="col-4">
-              <img src="img/icon/TailwindCSS.png" alt="" class="img-fluid">
+              <img src="img/icon/Adobe Photoshop.png" alt="adobe photoshop icon" class="img-fluid">
             </div>
             <div class="col-4">
-              <img src="img/icon/Bootstrap.png" alt="" class="img-fluid">
+              <img src="img/icon/Visual Studio Code.png" alt="visual studio code icon" class="img-fluid">
             </div>
           </div>
-
           <div class="row justify-content-between align-items-center m-0 mt-5">
             <div class="col-4">
-              <img src="img/icon/Figma.png" alt="" class=" img-fluid">
+              <img src="img/icon/Sass.png" alt="sass icon" class="img-fluid">
             </div>
             <div class="col-4">
-              <img src="img/icon/Githubb.png" alt="" class="img-fluid">
+              <img src="img/icon/TailwindCSS.png" alt="tailwindcss icon" class="img-fluid">
             </div>
             <div class="col-4">
-              <img src="img/icon/Wordpress.png" alt="" class="img-fluid">
+              <img src="img/icon/Bootstrap.png" alt="bootstrap icon" class="img-fluid">
+            </div>
+          </div>
+          <div class="row justify-content-between align-items-center m-0 mt-5">
+            <div class="col-4">
+              <img src="img/icon/Figma.png" alt="figma icon" class=" img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="img/icon/Githubb.png" alt="github icon" class="img-fluid">
+            </div>
+            <div class="col-4">
+              <img src="img/icon/Wordpress.png" alt="wordpress icon" class="img-fluid">
             </div>
           </div>
         </div>
-
-
     </section>
 
     <section class="container-fluid p-5 tools pb-12 gallery">
       <h3 class="mb-4 section-title gallery-title">These are some of my favorite shots that I've taken - I hope you
         enjoy them!
       </h3>
-      <!-- Gallery -->
       <div class="row">
         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-          <img src="img/gallery-2.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
-          <img src="img/gallery-3.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
-          <img src="img/gallery-5.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
+          <img src="img/gallery-2.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
+          <img src="img/gallery-3.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
+          <img src="img/gallery-5.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
         </div>
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="img/gallery-4.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
-          <img src="img/gallery-6.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
-          <img src="img/gallery-10.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
+          <img src="img/gallery-4.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
+          <img src="img/gallery-6.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
+          <img src="img/gallery-10.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
         </div>
         <div class="col-lg-4 mb-4 mb-lg-0">
-          <img src="img/gallery-7.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
-          <img src="img/gallery-8.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
-          <img src="img/gallery-9.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="" />
+          <img src="img/gallery-7.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
+          <img src="img/gallery-8.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
+          <img src="img/gallery-9.jpg" class="w-100 shadow-5-strong rounded mb-4 img-fluid" alt="Photo of car" />
         </div>
       </div>
       <div class="bg-wood black-wood">
       </div>
-      <!-- Gallery -->
     </section>
 
-    <section class="container-fluid p-5 projects">
-
-      <div class="row ">
+    <section class="container-fluid p-3 projects" id="projects">
+      <div class="row justify-content-center">
         <div class="col-md-2 mb-9 w-100">
-          <h3 class="mb-4 section-title">Commercial projects</h3>
+          <h3 class="mb-4 section-title main-title">Commercial projects</h3>
         </div>
-
-        <div class="row mb-10">
+        <div class="row mb-5">
           <div class="col col-md-6">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/wamilweld.png" class="img-fluid img-project" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                <a href="https://wamilweld.com/" target="_blank">
+                  <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Wamilweld.com</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <div class="text-center"> <a href="https://wamilweld.com/" class="btn button-main"
+                <p class="card-text">
+                  My first commercial project!<br />
+                  I created a simple one page website in Wordpress for a client. The whole process of creating the
+                  website was a new challenge for me. Before I started designing the website, I talked to the client to
+                  understand what they wanted. Then, I created a sketch of the website, which I adapted to their
+                  preferences. Once we agreed on the details, I started building the website. This project gave me
+                  valuable experience in website design and helped
+                  me learn how to create websites from scratch.</p>
+                <p class="card-text"><strong>Built with:</strong>
+                  <ul>
+                    <li> CMS Wordpress</li>
+                    <li> RWD</li>
+                  </ul>
+                </p>
+                <div class="text-center"> <a href="https://wamilweld.com/" class="btn button-main btn-outline-light"
                     target="_blank">Website</a>
                   <a href="https://www.figma.com/file/16EwNURpjNeVVHliBljlwa/Wamil-Weld?t=1FvrgVrPEDbfP3du-1"
-                    class="btn button-main" target="_blank">Figma</a>
+                    class="btn button-main btn-outline-light" target="_blank">Figma</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="d-flex align-items-center bd-highlight mb-6 project-title-wrap">
           <div class="me-auto p-2 bd-highlight">
             <h4 class="section-title">My other projects</h4>
@@ -280,36 +262,45 @@
               href="https://www.frontendmentor.io/profile/xAkashax" role="button">Frontend Mentor</a>
           </div>
         </div>
-
-
-        <div class="row mb-10">
-          <div class="col col-md-6">
-            <div class="card my-3">
+        <div class="row mb-5">
+          <div class="col col-md-6 py-3">
+            <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/portfolio.png" class="img-fluid img-project" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                <a href="#!" target="_blank">
+                  <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
                 <h5 class="card-title">Portfolio</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <div class="text-center"> <a href="#" class="btn button-main" target="_blank">Website</a>
+                <p class="card-text">Here you are! The project is a simple website that serves as my portfolio. The site
+                  includes a short description about me, my projects and contact details.</p>
+                <p class="card-text"><strong>Built with:</strong>
+                  <ul>
+                    <li> HTML5</li>
+                    <li> CSS3</li>
+                    <li> Flexbox and Grid</li>
+                    <li> Bootstrap 5</li>
+                    <li> Lordicon</li>
+                    <li> JS</li>
+                    <li> Photoshop</li>
+                  </ul>
+                </p>
+                <div class="text-center">
                   <a href="https://www.figma.com/file/zMVeMblqKPIdhK5Z97sI9N/Portfolio?node-id=0%3A1&t=WtSUol4t7cLZJWQI-1"
-                    class="btn button-main" target="_blank">Figma</a> <a href="#" class="btn button-main"
+                    class="btn button-main btn-outline-light mb-2" target="_blank">Figma</a> <a
+                    href="https://github.com/xAkashax/portfolio" class="btn button-main btn-outline-light mb-2"
                     target="_blank">Github</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col col-md-6">
-            <div class=" card">
+          <div class="col col-md-6 py-3">
+            <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/petcare.png" class="img-fluid img-project" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                <a href="https://xakashax.github.io/pet-care-website/" target="_blank">
+                  <div class="mask" style="background-color:  rgb(72, 98, 132, 0.15);;"></div>
                 </a>
               </div>
               <div class="card-body">
@@ -330,22 +321,22 @@
                   </ul>
                 </p>
                 <div class="text-center">
-                  <a href="#" class="btn button-main" target="_blank">Website</a>
-                  <a href="https://github.com/xAkashax/pet-care-website" class="btn button-main"
+                  <a href="https://xakashax.github.io/pet-care-website/" class="btn button-main btn-outline-light"
+                    target="_blank">Website</a>
+                  <a href="https://github.com/xAkashax/pet-care-website" class="btn button-main btn-outline-light"
                     target="_blank">Github</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="row mb-10">
-          <div class="col col-md-6">
+        <div class="row mb-5">
+          <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/photowebsite.png" class="img-fluid img-project" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                <a href="https://xakashax.github.io/photo-website/" target="_blank">
+                  <div class="mask" style="background-color:rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
@@ -364,22 +355,22 @@
                   </ul>
                 </p>
                 <div class="text-center">
-                  <a href="https://xakashax.github.io/photo-website/" class="btn button-main"
+                  <a href="https://xakashax.github.io/photo-website/" class="btn button-main btn-outline-light mb-2"
                     target="_blank">Website</a>
                   <a href="https://www.figma.com/file/cP4j7GgCny74yNMHBqdGug/Photo-website?node-id=0%3A1&t=zZSo3HiV5BPkgMsV-1"
-                    class="btn button-main" target="_blank">Figma</a>
-                  <a href="https://github.com/xAkashax/photo-website" class="btn button-main" target="_blank">Github</a>
+                    class="btn button-main mb-2" target="_blank">Figma</a>
+                  <a href="https://github.com/xAkashax/photo-website" class="btn button-main btn-outline-light mb-2"
+                    target="_blank">Github</a>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="col col-md-6">
+          <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/moonkingdom.png" class="img-fluid img-project" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                <a href="https://xakashax.github.io/parallax-scrolling-website/" target="_blank">
+                  <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
@@ -398,23 +389,22 @@
                     <li> Photoshop</li>
                   </ul>
                 </p>
-                <div class="text-center"> <a href="https://xakashax.github.io/parallax-scrolling-website/#"
+                <div class="text-center"> <a href="https://xakashax.github.io/parallax-scrolling-website/"
                     class="btn button-main" target="_blank">Website</a>
-                  <a href="https://github.com/xAkashax/parallax-scrolling-website" class="btn button-main"
-                    target="_blank">Github</a>
+                  <a href="https://github.com/xAkashax/parallax-scrolling-website"
+                    class="btn button-main btn-outline-light" target="_blank">Github</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="row mb-10">
-          <div class="col col-md-6">
+          <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                 <img src="img/barbershop.png" class="img-fluid img-project" />
-                <a href="#!">
-                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                <a href="https://xakashax.github.io/barber-shop-duck" target="_blank">
+                  <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
@@ -432,28 +422,65 @@
                     </ul>
                   </p>
                   <div class="text-center">
-                    <a href="https://xakashax.github.io/barber-shop-duck/" class="btn button-main"
+                    <a href="https://xakashax.github.io/barber-shop-duck" class="btn button-main btn-outline-light"
                       target="_blank">Website</a>
-                    <a href="https://github.com/xAkashax/barber-shop-duck" class="btn button-main"
+                    <a href="https://github.com/xAkashax/barber-shop-duck" class="btn button-main btn-outline-light"
                       target="_blank">Github</a>
                   </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
-
-
-
     </section>
-
-
+    <section class=" container-fluid p-3 about contact" id="contact">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="mb-4 section-title">Contact</h3>
+          <p class="text text-center">
+            Experience is not my strong point, but I make up for it with great ambition and enthusiasm.
+            I am looking for opportunities to develop and gain valuable experience in the industry.
+            Or maybe you need a determined person in your team? Contact me to discuss collaboration opportunities and
+            create something great together.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-md-start">
+          <h3 class="section-title contact-title">Get in Touch</h3>
+          <ul class="list-unstyled text p-4">
+            <li class="d-flex align-items-center mb-2 py-2"><img src="img/icon/mail.png" alt="email icon"
+                class="me-3"></i><a href="mailto:bilan.klaudia@gmail.com">bilan.klaudia@gmail.com</a></li>
+            <li class="d-flex align-items-center mb-2"><img src="img/icon/pin-round.png" alt="pin icon"
+                class="me-3"></i>
+              Wrocław,
+              Poland</li>
+          </ul>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center contact-list">
+          <ul class="list-inline social-icons">
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/klaudia-bilan/" class="p-1"><img
+                  src="img/icon/linkedin.png" alt="linkedin icon" title="linkedin" class="my-1"></a></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/xAkashax" class="p-1"><img
+                  src="img/icon/github.png" alt="github icon" title="github" class="m-1"><i
+                  class="bi bi-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/xakvsha/" class="p-1"><img
+                  src="img/icon/instagram45.png" alt="instagram icon" title="instagram" class="m-1"><i
+                  class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/xakvsha" class="p-1"><img
+                  src="img/icon/facebook45.png" alt="facebook icon" title="facebook" class="m-1"><i
+                  class="bi bi-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
-
-  <footer class=" container">
+  <footer class="text-center text-lg-start">
+    <div class="text-center copyright p-3">
+      Copyright © <span class="actual-year"></span> Klaudia Biłan</a> | Created by <a
+        href="https://github.com/xAkashax">xAkashax</a>
+    </div>
   </footer>
-
 </body>
 
 </html>
