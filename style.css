@@ -9,7 +9,8 @@
   --active-color: #8a1a25;
   --title-font: 'Changa One', cursive;
   --text-font: 'Maitree', serif;
-  --tittle-second-font: 'Roboto Mono', monospace;
+  --title-second-font: 'Roboto Mono', monospace;
+  --letter-spacing: 0.05rem;
 }
 
 * {
@@ -22,8 +23,78 @@ html {
   scroll-behavior: smooth;
 }
 
-.main {
+.main,
+.about,
+.projects,
+.gallery {
   position: relative;
+}
+
+.navbar,
+.header-title,
+.text,
+.gallery-title,
+.section-title {
+  letter-spacing: var(--letter-spacing);
+}
+
+.navbar,
+.button-main,
+.subtitle,
+.section-title {
+  font-family: var(--title-second-font);
+}
+
+.about,
+.projects,
+footer {
+  background-color: var(--primary-color);
+}
+
+.button-main,
+.btn-back-to-top,
+.social a img:hover {
+  background-color: var(--accent-color);
+}
+
+.btn-back-to-top:hover,
+.socials-about a img:hover,
+.social-icons li a img:hover {
+  background-color: var(--active-color);
+}
+
+.nav-link,
+.button-main:hover,
+.section-title,
+.copyright a,
+.card-title {
+  color: var(--accent-color);
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: var(--active-color) !important;
+}
+
+.button-main,
+.btn-back-to-top {
+  color: var(--secondary-color);
+}
+
+.btn-back-to-top:hover {
+  color: var(--primary-color);
+}
+
+.header-title,
+.subtitle,
+.tools-text {
+  color: var(--black) !important;
+}
+
+.about,
+.projects,
+.text {
+  color: var(--white);
 }
 
 /* Navigation */
@@ -32,8 +103,6 @@ html {
   border-bottom: 1px solid #dee5ed;
   font-size: 1.25rem;
   line-height: 125%;
-  font-family: var(--tittle-second-font);
-  letter-spacing: 0.05rem;
 }
 
 .navbar-nav {
@@ -50,12 +119,6 @@ html {
   margin: 0 1.875rem;
   font-weight: 900;
   text-align: center;
-  color: var(--accent-color);
-}
-
-.nav-link.active,
-.nav-link:hover {
-  color: var(--active-color) !important;
 }
 
 /*  Buttons */
@@ -63,16 +126,12 @@ html {
 .button-main {
   border-radius: 50px;
   border-color: transparent;
-  background-color: var(--accent-color);
   font-size: 1.125rem;
-  font-family: var(--tittle-second-font);
   font-weight: 400;
   text-transform: none;
-  color: var(--secondary-color);
 }
 
 .button-main:hover {
-  color: var(--accent-color);
   border-color: var(--accent-color) !important;
 }
 
@@ -82,13 +141,6 @@ html {
   bottom: 20px;
   right: 20px;
   display: none;
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-}
-
-.btn-back-to-top:hover {
-  background-color: var(--active-color);
-  color: var(--primary-color);
 }
 
 /* Icons */
@@ -98,15 +150,10 @@ html {
   transform: translate(50%, 110px);
 }
 
-.social a img:hover {
-  border-radius: 6px;
-  background-color: var(--accent-color);
-}
-
+.social a img:hover,
 .socials-about a img:hover,
 .social-icons li a img:hover {
   border-radius: 6px;
-  background-color: var(--active-color);
 }
 
 .lord-icon-wrap {
@@ -129,16 +176,9 @@ h2 {
 }
 
 .header-title {
+  line-height: 80%;
   font-family: var(--title-font);
-  color: var(--black);
-  line-height: 80px;
   vertical-align: Top;
-  letter-spacing: 5%;
-}
-
-.subtitle {
-  font-family: var(--tittle-second-font);
-  color: var(--black);
 }
 
 /* Bacgrounds */
@@ -148,40 +188,35 @@ h2 {
 }
 
 .bg-wood {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 20%;
   background-image: url(img/forest_white.png);
   background-repeat: repeat-x;
   background-size: contain;
   background-position: bottom left;
-  height: 20%;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .black-wood {
-  background-image: url(img/forest_dark.png);
   height: 20%;
+  background-image: url(img/forest_dark.png);
 }
 
 /* Sections */
 
 .about,
 .projects {
-  min-height: 100vh;
-  background-color: var(--primary-color);
   width: 100%;
-  color: var(--white);
-  position: relative;
+  min-height: 100vh;
 }
 
 .section-title {
-  font-family: var(--tittle-second-font);
-  color: var(--accent-color);
+  width: 100%;
   font-size: 2rem;
   line-height: 167%;
   text-align: center;
-  width: 100%;
 }
 
 h4.section-title {
@@ -189,23 +224,17 @@ h4.section-title {
 }
 
 .text {
-  font-family: var(--text-font);
   line-height: 188%;
-  letter-spacing: 0.05em;
-  color: var(--white);
+  font-family: var(--text-font);
 }
 
 .about .row,
 .tools .row .projects {
-  margin: 100px 0;
+  margin: 6.25rem 0;
 }
 
 .tools {
-  color: var(--black);
   background-color: var(--secondary-color);
-}
-
-.tools-text {
   color: var(--black);
 }
 
@@ -214,32 +243,29 @@ h4.section-title {
 }
 
 .gallery {
-  padding-top: 20px !important;
-  padding-bottom: 200px !important;
-  position: relative;
+  padding-top: 1.25rem !important;
+  padding-bottom: 12.5rem !important;
 }
 
 .gallery-title {
-  text-align: center;
   font-size: 1rem;
-  letter-spacing: 0.05em;
+  text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--black);
 }
 
 .card {
-  padding: 20px 5px;
   border: 3px dashed var(--accent-color);
-  border-radius: 0;
+  padding: 1.25rem 0.313rem;
   background-color: transparent;
 }
 
 .card-title {
-  color: var(--accent-color);
   font-weight: 600;
 }
 
-.ripple {
+.ripple,
+.card {
   border-radius: 0;
 }
 
@@ -248,20 +274,12 @@ h4.section-title {
 }
 
 .title-more {
-  color: var(--secondary-color) !important;
   font-size: 0.9rem !important;
-}
-
-footer {
-  background-color: var(--primary-color);
+  color: var(--secondary-color) !important;
 }
 
 .copyright {
   font-size: 0.8rem;
-}
-
-.copyright a {
-  color: var(--accent-color);
 }
 
 /* Media Queries */
@@ -284,7 +302,7 @@ footer {
 
 @media (min-width: 765px) {
   .fa-bars {
-    font-size: 2em;
+    font-size: 2rem;
   }
 
   .lord-icon-wrap {
@@ -293,8 +311,8 @@ footer {
   }
 
   lord-icon {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
   }
 
   .black-wood {
@@ -331,19 +349,12 @@ footer {
     padding: 2rem 5rem !important;
   }
 
-  .contact .text {
+  .contact .text,
+  .contact-title {
     text-align: left !important;
   }
 
-  .contact-title {
-    text-align: left;
-    font-size: 1.75rem !important;
-  }
-
-  .btn-wrap {
-    justify-content: end !important;
-  }
-
+  .btn-wrap,
   .contact-list {
     justify-content: end !important;
   }
@@ -388,14 +399,12 @@ footer {
   }
 
   .section-title {
-    font-family: var(--tittle-second-font);
     font-size: 3rem;
     line-height: 167%;
-    letter-spacing: 0.05em;
   }
 
   .gallery-title {
-    font-size: 20px !important;
+    font-size: 1.25rem !important;
     line-height: 400%;
   }
 
