@@ -13,6 +13,7 @@ The project is a simple website that serves as my portfolio. The site includes a
 
 ![](img/portfolio.png)
 
+
 ## Demo
 
 - Live Site URL: [Live Demo](https://xakashax.github.io/portfolio/)
@@ -26,7 +27,6 @@ The project is a simple website that serves as my portfolio. The site includes a
 - Photoshop
 - Bootstrap 5
 - Lordicon
-- Photoshop
 - Figma
 
 ## Photos
