@@ -15,7 +15,7 @@ The project is a simple website that serves as my portfolio. The site includes a
 
 ## Demo
 
-- Live Site URL: [Live Demo](https://xakashax.github.io/pet-care-website/)
+- Live Site URL: [Live Demo](https://xakashax.github.io/portfolio/)
 
 ## Built with
 
