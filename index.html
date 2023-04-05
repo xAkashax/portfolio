@@ -36,16 +36,16 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarExample01">
           <ul class="navbar-nav mb-2 p-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" aria-label="Home page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" aria-label="About me page" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" aria-label="Page with projects" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" aria-label="Contact page" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -53,10 +53,10 @@
     </nav>
     <div id="intro" class="bg-image" style=" background-image: url('img/header_background.jpg'); height: 100vh;">
       <div class="social position-absolute">
-        <a href="https://github.com/xAkashax" class="p-1"><img src="img/icon/github.png" alt="github icon"
-            title="github" class="m-1"></a>
-        <a href="https://www.linkedin.com/in/klaudia-bilan/" class="p-1"><img src="img/icon/linkedin.png"
-            alt="linkedin icon" title="linkedin" class="m-1"></a>
+        <a href="https://github.com/xAkashax" class="p-1" aria-label="Link to github"><img src="img/icon/github.png"
+            alt="github icon" title="github" class="m-1"></a>
+        <a href="https://www.linkedin.com/in/klaudia-bilan/" class="p-1" aria-label="Link to linkedin"><img
+            src="img/icon/linkedin.png" alt="linkedin icon" title="linkedin" class="m-1"></a>
       </div>
       <div class="container d-flex ms-auto align-items-center text-center justify-content-center h-100">
         <div class="d-flex row mb-lg-12">
@@ -89,10 +89,10 @@
             Web Developer. Thanks for taking the time to get to know me a little better!
           </p>
           <div class="socials-about mt-5">
-            <a href="https://www.instagram.com/xakvsha/" class="p-1"><img src="img/icon/instagram.png"
-                alt="instagram icon" title="instagram" class="my-1"></a>
-            <a href="https://www.facebook.com/xakvsha" class="p-1"><img src="img/icon/facebook.png" alt="facebook icon"
-                title="facebook" class="m-1"></a>
+            <a href="https://www.instagram.com/xakvsha/" class="p-1" aria-label="Link to instagram"><img
+                src="img/icon/instagram.png" alt="instagram icon" title="instagram" class="my-1"></a>
+            <a href="https://www.facebook.com/xakvsha" class="p-1" aria-label="Link to facebook"><img
+                src="img/icon/facebook.png" alt="facebook icon" title="facebook" class="m-1"></a>
           </div>
         </div>
         <div class="col-md-6 gx-5 mb-4">
@@ -211,13 +211,14 @@
           <div class="col col-md-6">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img/wamilweld.png" class="img-fluid img-project" />
-                <a href="https://wamilweld.com/" target="_blank">
+                <img src="img/wamilweld.png" class="img-fluid img-project"
+                  alt="screenshot from the wamilweld.com website" />
+                <a href="https://wamilweld.com/" target="_blank" aria-label="Link to www.wamiweld.com website">
                   <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Wamilweld.com</h5>
+                <h4 class="card-title">Wamilweld.com</h4>
                 <p class="card-text">
                   My first commercial project!<br />
                   I created a simple one page website in Wordpress for a client. The whole process of creating the
@@ -233,9 +234,10 @@
                   </ul>
                 </p>
                 <div class="text-center"> <a href="https://wamilweld.com/" class="btn button-main btn-outline-light"
-                    target="_blank">Website</a>
+                    target="_blank" aria-label="Link to www.wamiweld.com website">Website</a>
                   <a href="https://www.figma.com/file/16EwNURpjNeVVHliBljlwa/Wamil-Weld?t=1FvrgVrPEDbfP3du-1"
-                    class="btn button-main btn-outline-light" target="_blank">Figma</a>
+                    class="btn button-main btn-outline-light" target="_blank"
+                    aria-label="Link to figma with wamilweld.com design project">Figma</a>
                 </div>
               </div>
             </div>
@@ -266,13 +268,14 @@
           <div class="col col-md-6 py-3">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img/portfolio.png" class="img-fluid img-project" />
-                <a href="#!" target="_blank">
+                <img src="img/portfolio.png" class="img-fluid img-project"
+                  alt="screenshot from the portfolio website" />
+                <a href="#!" target="_blank" aria-label="Link to portfolio website">
                   <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Portfolio</h5>
+                <h4 class="card-title">Portfolio</h4>
                 <p class="card-text">Here you are! The project is a simple website that serves as my portfolio. The site
                   includes a short description about me, my projects and contact details.</p>
                 <p class="card-text"><strong>Built with:</strong>
@@ -288,9 +291,10 @@
                 </p>
                 <div class="text-center">
                   <a href="https://www.figma.com/file/zMVeMblqKPIdhK5Z97sI9N/Portfolio?node-id=0%3A1&t=WtSUol4t7cLZJWQI-1"
-                    class="btn button-main btn-outline-light mb-2" target="_blank">Figma</a> <a
+                    class="btn button-main btn-outline-light mb-2" target="_blank"
+                    aria-label="Link to figma with design website">Figma</a> <a
                     href="https://github.com/xAkashax/portfolio" class="btn button-main btn-outline-light mb-2"
-                    target="_blank">Github</a>
+                    target="_blank" aria-label="Link to github">Github</a>
                 </div>
               </div>
             </div>
@@ -298,13 +302,14 @@
           <div class="col col-md-6 py-3">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img/petcare.png" class="img-fluid img-project" />
-                <a href="https://xakashax.github.io/pet-care-website/" target="_blank">
+                <img src="img/petcare.png" class="img-fluid img-project" alt="screenshot from the Pet Care website" />
+                <a href="https://xakashax.github.io/pet-care-website/" target="_blank"
+                  aria-label="Link to pet care website">
                   <div class="mask" style="background-color:  rgb(72, 98, 132, 0.15);;"></div>
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Pet Care Website</h5>
+                <h4 class="card-title">Pet Care Website</h4>
                 <p class="card-text">This is a Pet Care Website which I just made after learning some JavaScript from
                   Jonas Schmedtmann's course. At first, I just wanted to practice the course material. Finally, I made
                   my own version of the site and added a few things. In course, the site wasn't responsive, that's why I
@@ -322,9 +327,9 @@
                 </p>
                 <div class="text-center">
                   <a href="https://xakashax.github.io/pet-care-website/" class="btn button-main btn-outline-light"
-                    target="_blank">Website</a>
+                    target="_blank" aria-label="Link tpet care website">Website</a>
                   <a href="https://github.com/xAkashax/pet-care-website" class="btn button-main btn-outline-light"
-                    target="_blank">Github</a>
+                    target="_blank" aria-label="Link to github">Github</a>
                 </div>
               </div>
             </div>
@@ -334,13 +339,13 @@
           <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img/photowebsite.png" class="img-fluid img-project" />
-                <a href="https://xakashax.github.io/photo-website/" target="_blank">
+                <img src="img/photowebsite.png" class="img-fluid img-project" alt="screenshot from the photo website" />
+                <a href="https://xakashax.github.io/photo-website/" target="_blank" aria-label="Link to photo website">
                   <div class="mask" style="background-color:rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Akasha Photography - Car photography portfolio</h5>
+                <h4 class="card-title">Akasha Photography - Car photography portfolio</h4>
                 <p class="card-text">Because car photography is one of my hobbies, I made this small website with my
                   photo portfolio 📸. Mainly for displaying images downloaded from the folder on imgur.</p>
                 <p class="card-text"><strong>Built with:</strong>
@@ -356,11 +361,12 @@
                 </p>
                 <div class="text-center">
                   <a href="https://xakashax.github.io/photo-website/" class="btn button-main btn-outline-light mb-2"
-                    target="_blank">Website</a>
+                    target="_blank" aria-label="Link to photo website">Website</a>
                   <a href="https://www.figma.com/file/cP4j7GgCny74yNMHBqdGug/Photo-website?node-id=0%3A1&t=zZSo3HiV5BPkgMsV-1"
-                    class="btn button-main mb-2" target="_blank">Figma</a>
+                    class="btn button-main mb-2" target="_blank"
+                    aria-label="Link to figma with design photo website">Figma</a>
                   <a href="https://github.com/xAkashax/photo-website" class="btn button-main btn-outline-light mb-2"
-                    target="_blank">Github</a>
+                    target="_blank" aria-label="Link to github">Github</a>
                 </div>
               </div>
             </div>
@@ -368,13 +374,15 @@
           <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img/moonkingdom.png" class="img-fluid img-project" />
-                <a href="https://xakashax.github.io/parallax-scrolling-website/" target="_blank">
+                <img src="img/moonkingdom.png" class="img-fluid img-project"
+                  alt="screenshot from the Moon Kingdom website" />
+                <a href="https://xakashax.github.io/parallax-scrolling-website/" target="_blank"
+                  aria-label="Link to moon kingdom website">
                   <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">Moon Kingdom - Responsive Parallax Scrolling Webiste inspired by Sailor Moon</h5>
+                <h4 class="card-title">Moon Kingdom - Responsive Parallax Scrolling Webiste inspired by Sailor Moon</h4>
                 <p class="card-text">Initially, it was supposed to be just an exercise to create a Parallax Scrollin
                   Website. Only for desktop preview. Finally, I made an entire landing page out of it. Also for tablet
                   and mobile view. Using desktop-first. Webiste inspired by Sailor Moon.</p>
@@ -390,9 +398,9 @@
                   </ul>
                 </p>
                 <div class="text-center"> <a href="https://xakashax.github.io/parallax-scrolling-website/"
-                    class="btn button-main" target="_blank">Website</a>
+                    class="btn button-main" target="_blank" aria-label="Link to moon kingdom website">Website</a>
                   <a href="https://github.com/xAkashax/parallax-scrolling-website"
-                    class="btn button-main btn-outline-light" target="_blank">Github</a>
+                    class="btn button-main btn-outline-light" target="_blank" aria-label="Link to github">Github</a>
                 </div>
               </div>
             </div>
@@ -402,13 +410,15 @@
           <div class="col col-md-6 py-3">
             <div class=" card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="img/barbershop.png" class="img-fluid img-project" />
-                <a href="https://xakashax.github.io/barber-shop-duck" target="_blank">
+                <img src="img/barbershop.png" class="img-fluid img-project"
+                  alt="screenshot from the the barber shop duck website" />
+                <a href="https://xakashax.github.io/barber-shop-duck" target="_blank"
+                  aria-label="Link to barbershop website">
                   <div class="mask" style="background-color: rgba(72, 98, 132, 0.15);"></div>
                 </a>
               </div>
               <div class="card-body">
-                <h5 class="card-title">The Barber Shop Duck - Landing Page</h5>
+                <h4 class="card-title">The Barber Shop Duck - Landing Page</h4>
                 <My class="card-text">My first bigger project - A basic responsive landing page of a barber shop made
                   with HTML, CSS and a little JS</p>
                   <p class="card-text"><strong>Built with:</strong>
@@ -423,9 +433,9 @@
                   </p>
                   <div class="text-center">
                     <a href="https://xakashax.github.io/barber-shop-duck" class="btn button-main btn-outline-light"
-                      target="_blank">Website</a>
+                      target="_blank" aria-label="Link to barbershop website">Website</a>
                     <a href="https://github.com/xAkashax/barber-shop-duck" class="btn button-main btn-outline-light"
-                      target="_blank">Github</a>
+                      target="_blank" aria-label="Link to github">Github</a>
                   </div>
               </div>
             </div>
@@ -450,7 +460,8 @@
           <h3 class="section-title contact-title">Get in Touch</h3>
           <ul class="list-unstyled text p-4">
             <li class="d-flex align-items-center mb-2 py-2"><img src="img/icon/mail.png" alt="email icon"
-                class="me-3"></i><a href="mailto:bilan.klaudia@gmail.com">bilan.klaudia@gmail.com</a></li>
+                class="me-3"></i><a href="mailto:bilan.klaudia@gmail.com"
+                aria-label="Link to mail">bilan.klaudia@gmail.com</a></li>
             <li class="d-flex align-items-center mb-2"><img src="img/icon/pin-round.png" alt="pin icon"
                 class="me-3"></i>
               Wrocław,
@@ -459,17 +470,18 @@
         </div>
         <div class="col-md-6 d-flex justify-content-center align-items-center contact-list">
           <ul class="list-inline social-icons">
-            <li class="list-inline-item"><a href="https://www.linkedin.com/in/klaudia-bilan/" class="p-1"><img
-                  src="img/icon/linkedin.png" alt="linkedin icon" title="linkedin" class="my-1"></a></i></a></li>
-            <li class="list-inline-item"><a href="https://github.com/xAkashax" class="p-1"><img
-                  src="img/icon/github.png" alt="github icon" title="github" class="m-1"><i
-                  class="bi bi-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/xakvsha/" class="p-1"><img
-                  src="img/icon/instagram45.png" alt="instagram icon" title="instagram" class="m-1"><i
-                  class="bi bi-instagram"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.facebook.com/xakvsha" class="p-1"><img
-                  src="img/icon/facebook45.png" alt="facebook icon" title="facebook" class="m-1"><i
-                  class="bi bi-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/klaudia-bilan/" class="p-1"
+                aria-label="Link to linkedin"><img src="img/icon/linkedin.png" alt="linkedin icon" title="linkedin"
+                  class="my-1"></a></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/xAkashax" class="p-1"
+                aria-label="Link to github"><img src="img/icon/github.png" alt="github icon" title="github"
+                  class="m-1"><i class="bi bi-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/xakvsha/" class="p-1"
+                aria-label="Link to instagram"><img src="img/icon/instagram45.png" alt="instagram icon"
+                  title="instagram" class="m-1"><i class="bi bi-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/xakvsha" class="p-1"
+                aria-label="Link to facebook"><img src="img/icon/facebook45.png" alt="facebook icon" title="facebook"
+                  class="m-1"><i class="bi bi-linkedin"></i></a></li>
           </ul>
         </div>
       </div>
