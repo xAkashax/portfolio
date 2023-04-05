@@ -27,7 +27,6 @@ The project is a simple website that serves as my portfolio. The site includes a
 - Photoshop
 - Bootstrap 5
 - Lordicon
-- Photoshop
 - Figma
 
 ## Photos
